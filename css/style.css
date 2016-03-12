@@ -1,0 +1,74 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+.step-icon{
+    max-width: 30%;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.step-text{
+    font-size: 16px;
+    text-align: center;
+}
+
+.step-title{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.map-section{
+    background-color: #F8F8F8;
+}
+
+#map{
+    height: 300px;
+    width:100%;
+}
+
+.store-container{
+    text-align: center;
+}
+
+.store-button{
+    width: 20%;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.footer-section{
+    background-color: #2B2D2E;
+    padding: 60px;
+}
+
+.footer-column{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.footer-title{
+    color: rgba(245, 245, 245, 1);
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.footer-elements{
+    width: 100px;
+    text-align: center;
+    margin: auto;
+}
+
+.footer-element{
+    color: rgba(245, 245, 245, 0.8);
+    font-size: 14px;
+    width: 100px;
+}
+
+.copyright{
+    margin-top: 40px;
+    text-align: center;
+}
