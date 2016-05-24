@@ -1,0 +1,19 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+.hero{
+    border-bottom: solid 1px #ecf0f1;
+}
+
+.section{
+    border-bottom: solid 1px #ecf0f1;
+}
+
+.section-application{
+    background-color: #F5F7FA;
+}
+
+.footer{
+    background-color: #2B2D2E;
+}

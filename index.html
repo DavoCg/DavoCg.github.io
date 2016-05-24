@@ -1,136 +1,78 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.0.16/css/bulma.css">
-        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.15.0/mapbox-gl.js'></script>
-        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.15.0/mapbox-gl.css' rel='stylesheet' />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="./css/style.css">
-        <meta charset="UTF-8">
-    </head>
-    <body>
-    <section class="hero is-info is-medium">
-        <div class="hero-header">
-            <header class="header">
+<head>
+    <title>Pleez | Service de linge on-demand</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.0.26/css/bulma.css">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style2.css">
+</head>
+<body>
+    <section class="hero is-info is-large">
+        <div class="hero-head">
+            <header class="nav">
                 <div class="container">
-                    <div class="header-left">
-                        <a class="header-item" href="#">
-                            <img src="./images/pleez.png" alt="Logo">
+                    <div class="nav-left">
+                        <a class="nav-item">
+                            <img src="http://pleez.co/images/pleez.png" alt="Logo">
                         </a>
                     </div>
-                    <span class="header-toggle">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </span>
-                    <div class="header-right header-menu">
-                      <span class="header-item">
-                        <a class="button">
-                            <i class="fa fa-cloud-download"></i>
-                            Télécharger l'application
-                        </a>
-                      </span>
+            <span class="nav-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+                    <div class="nav-right nav-menu">
+                        <a class="nav-item is-active">Home</a>
+                        <a class="nav-item">Examples</a>
+                        <a class="nav-item">Documentation</a>
+              <span class="nav-item">
+                <a class="button is-success">
+                    <span>Commander maintenant</span>
+                </a>
+              </span>
                     </div>
                 </div>
             </header>
         </div>
-        <div class="hero-content">
-            <div class="container">
-                <h1 class="title is-2">
-                    La livraison de linge à domicile
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title">
+                    The lavage du linge,
                 </h1>
-                <h2 class="subtitle is-4">
-                    réinventée.
+                <h2 class="subtitle">
+                    made simple.
                 </h2>
             </div>
         </div>
     </section>
     <section class="section">
         <div class="container">
-            <div class="columns">
-                <div class="column is-third is-centered">
-                    <img class="step-icon" src="./images/eco_friendly_vehicle.png" alt="">
-                    <h1 class="title step-title is-4">Vous commandez</h1>
-                    <p class="step-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad asperiores delectus dolorum harum ipsum</p>
-                </div>
-                <div  class="column is-third is-centered">
-                    <img class="step-icon" src="./images/water_preservation.png" alt="">
-                    <h1 class="title step-title is-4">Nous lavons</h1>
-                   <p class="step-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolor, facere? Ab aliquid amet </p>
-                </div>
-                <div class="column is-third is-centered">
-                    <img class="step-icon" src="./images/save_the_world.png" alt="">
-                    <h1 class="title step-title is-4">Vous faites un petit geste</h1>
-                    <p class="step-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet beatae dolores ea exercitationem illo inventore</p>
-                </div>
-            </div>
+                <h1 class="title">Section</h1>
+                <h2 class="subtitle">
+                    A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
+                </h2>
         </div>
     </section>
-    <section class="section map-section">
+    <section class="section section-application">
         <div class="container">
-            <h1 class="title step-title is-4">Pleez livre dans toutes ces zones.</h1>
-            <div id="map"></div>
-        </div>
-    </section>
-    <section class="section">
-        <div class="container">
-            <h1 class="title step-title is-4">Retrouvez notre application iPhone et Android</h1>
-            <div class="columns">
-                <div class="column is-centered">
-                    <div class="store-container">
-                        <img class="store-button" src="./images/appstore.svg" alt="">
-                        <img class="store-button" src="./images/android.svg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section footer-section">
-        <div class="container">
-            <div class="columns is-centered">
-                <div class="column"></div>
-                <div class="column footer-column">
-                    <div class="footer-elements">
-                        <p class="footer-title">Société</p>
-                        <p class="footer-element">À propos</p>
-                        <p class="footer-element">Carrières</p>
-                        <p class="footer-element">Presse</p>
-                        <p class="footer-element">Blog</p>
-                        <p class="footer-element">Règles</p>
-                        <p class="footer-element">Conditions générales</p>
-                    </div>
-                </div>
-                <div class="column footer-column">
-                    <div class="footer-elements">
-                        <p class="footer-title">Pleez</p>
-                        <p class="footer-element">À propos</p>
-                        <p class="footer-element">Carrières</p>
-                        <p class="footer-element">Presse</p>
-                        <p class="footer-element">Blog</p>
-                        <p class="footer-element">Règles</p>
-                        <p class="footer-element">Conditions générales</p>
-                    </div>
-                </div>
-                <div class="column footer-column">
-                    <div class="footer-elements">
-                        <p class="footer-title">Nos clients</p>
-                        <p class="footer-element">À propos</p>
-                        <p class="footer-element">Carrières</p>
-                        <p class="footer-element">Presse</p>
-                        <p class="footer-element">Blog</p>
-                        <p class="footer-element">Règles</p>
-                        <p class="footer-element">Conditions générales</p>
-                    </div>
-                </div>
-                <div class="column"></div>
-            </div>
             <div class="columns">
                 <div class="column">
-                    <p class="copyright">© Copyright Pleez 2016</p>
+                    <img src="./images/iph.png" alt="">
+                </div>
+                <div class="column">
+
                 </div>
             </div>
         </div>
     </section>
-    <script src="./js/map.js"></script>
-    </body>
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <p>
+                    <a class="icon" href="https://github.com/jgthms/bulma"><i class="fa fa-github"></i></a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
